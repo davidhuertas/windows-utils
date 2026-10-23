@@ -85,6 +85,12 @@ C:/Program Files/Git
 
 Pin the shortcut anywhere — taskbar, Start menu, desktop. `ws-launch.sh` sources the selector and then hands you an interactive shell in the chosen directory.
 
+### Windows Terminal Configuration
+
+When adding or modifying Git Bash profile, use the `bash.exe` binary instead, and include the source in the commandLine property:
+
+`C:\\Program Files\\Git\\bin\\bash.exe -c \"source /c/path/to/windows-utils/git-bash-workspace-selector/ws-launch.sh\"`
+
 ### Windows Terminal layout
 
 To open three Git Bash panes (one wide on the right, two stacked on the left), each running the selector, add to your Windows Terminal settings:
